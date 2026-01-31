@@ -1,6 +1,6 @@
 require('dotenv').config();
-const connectDB = require('./config/database');
-const { createSamplePlayers } = require('./scrapers/playerScraper');
+const connectDB = require('../config/database');
+const { createSamplePlayers } = require('./playerScraper');
 
 // Connect to database
 connectDB().then(async () => {

@@ -1,6 +1,6 @@
 require('dotenv').config();
-const connectDB = require('./config/database');
-const { scrapeHeroes } = require('./scrapers/heroScraper');
+const connectDB = require('../config/database');
+const { scrapeHeroes } = require('./heroScraper');
 
 // Connect to database
 connectDB().then(async () => {
